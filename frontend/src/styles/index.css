@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Shared global defaults for the frontend. */
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #172033;
+  background: #f8fafc;
+}
+
+body { margin: 0; min-width: 320px; }
+
+* { box-sizing: border-box; }

@@ -27,3 +27,16 @@ Use `npm start` for production-style startup and `npm test` to run the starter t
 ## Environment
 
 Copy `backend/.env.example` to `backend/.env` and provide `MONGODB_URI` and `JWT_SECRET` when those features are implemented. Do not commit `.env` or credentials.
+
+## Frontend
+
+The React frontend is located in `frontend/` and uses Vite, Tailwind CSS v4, React Router, Axios, Leaflet, Socket.IO Client, React Context, Recharts, and Lucide React. It currently provides architecture scaffolding only: routes, role-specific layouts, shared components, API and socket clients, and placeholder pages.
+
+```bash
+cd frontend
+npm install
+cp .env.example .env
+npm run dev
+```
+
+Set `VITE_API_BASE_URL` and `VITE_SOCKET_URL` in `frontend/.env` for the backend environment. Use `npm run build` to create a production frontend bundle.
