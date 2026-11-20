@@ -1,2 +1,8 @@
-// Reserved for a standard API error abstraction.
-export default class ApiError extends Error {}
+export default class ApiError extends Error {
+  constructor(statusCode, message, details = undefined) {
+    super(message);
+    this.name = 'ApiError';
+    this.statusCode = statusCode;
+    this.details = details;
+  }
+}

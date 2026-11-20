@@ -1,2 +1,7 @@
-// Reserved for a standard API response abstraction.
-export default class ApiResponse {}
+export default class ApiResponse {
+  constructor(data = null, message = 'Success') {
+    this.success = true;
+    this.message = message;
+    this.data = data;
+  }
+}
